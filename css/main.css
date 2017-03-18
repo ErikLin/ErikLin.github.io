@@ -301,7 +301,7 @@ a.link{
     color: #DB1C59;
     
 }
-div.big-img.on{
+div.big-img .on{
     display: flex;
 }
 div.big-img{
