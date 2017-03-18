@@ -106,15 +106,18 @@ html{
 body{
     margin: 3rem;
 }
+.noscroll { 
+  overflow: hidden;
+}
 
 nav{
     z-index: 50;
     border: .55em solid #3A393E;
     position: fixed;
-    left: -2.5rem;
+    left: -3.5rem;
     top: 3rem;
     background-color: #E3E6EC;
-    transform: translateX(-3.75rem);
+    transform: translateX(-4.5rem);
     transition: transform .2s ease-in-out;
 }
 nav:hover{
@@ -302,7 +305,36 @@ a.link{
     color: #DB1C59;
     
 }
-
+div.big-img.on{
+    display: flex;
+}
+div.big-img{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 800;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.67);
+    overflow-y: scroll;
+}
+#big-pic{
+    max-width: 90vw;
+    max-height: 90vh;
+    z-index: 1000;
+    
+    //margin: 6rem;
+}
+#close{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    width: 1.5rem;
+}
 article{
     display: flex;
     justify-content: center;
