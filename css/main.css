@@ -331,6 +331,7 @@ div.on{
     right: 0;
     margin: 2rem;
     width: 1.5rem;
+    z-index: 10000;
 }
 article{
     display: flex;
@@ -424,7 +425,7 @@ div.img-col img{
     padding: 1rem;
 }
 div.big-img-col img{
-    margin: 1rem;
+    margin: 1rem 0;
 }
 div.big-img-col{
     margin-top: 5rem;
@@ -454,6 +455,7 @@ div.big-img-col{
     
     body {
         margin: 1rem;
+        margin-top: 3.5rem;
     }
     
     #work a {
