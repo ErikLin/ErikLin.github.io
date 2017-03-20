@@ -159,6 +159,7 @@ nav a{
 div.headshot img{
     border: .55em solid #3A393E;
     border-radius: 10rem;
+    width: 13.7rem;
 }
 
 div.headshot {
