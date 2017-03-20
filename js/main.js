@@ -1,7 +1,5 @@
 $( document ).ready(function() {
     
-    
-    
     $( "article img" ).click(function() {
         var src = $(this).attr("src");
         $( "#big-pic" ).attr("src", src);

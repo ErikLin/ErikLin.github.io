@@ -301,9 +301,7 @@ a.link{
     color: #DB1C59;
     
 }
-div.big-img .on{
-    display: flex;
-}
+
 div.big-img{
     display: none;
     position: fixed;
@@ -311,11 +309,14 @@ div.big-img{
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 800;
+    z-index: 8000;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.67);
     overflow-y: scroll;
+}
+div.on{
+    display: flex;
 }
 #big-pic{
     max-width: 90vw;
