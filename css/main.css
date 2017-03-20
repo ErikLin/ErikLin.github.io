@@ -315,9 +315,11 @@ div.big-img{
     background: rgba(0, 0, 0, 0.67);
     overflow-y: scroll;
 }
+
 div.on{
     display: flex;
 }
+
 #big-pic{
     max-width: 90vw;
     max-height: 90vh;
