@@ -124,9 +124,9 @@ nav::after{
 	content: "menu";
 	position: absolute;
 	right: 0;
-	transform: rotate(-90deg) translate(4.5rem,2.45rem);
+	transform: rotate(-90deg) translate(4.5rem,2.35rem);
 	background-color: #E3E6EC;
-	padding: .55rem;
+	padding: 0 .55rem;
 	letter-spacing: 1px;
 	font-size: 1.2rem;
 }
