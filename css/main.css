@@ -435,11 +435,14 @@ div.img-col img{
     margin: 0;
     padding: 1rem;
 }
-div.big-img-col img{
+div.big-img-col img, div.big-img-col video{
     margin: 1rem 0;
 }
 div.big-img-col{
     margin-top: 5rem;
+}
+div.compact img, div.compact video{
+	margin: 0 0 0 0;
 }
 
 @media only screen and (max-width: 66em) {
