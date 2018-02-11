@@ -367,7 +367,7 @@ article h1{
 
 article h5{
     font-weight: 400;
-    font-style: italic;
+    /*font-style: italic;*/
     margin-top: 0
 }
 
