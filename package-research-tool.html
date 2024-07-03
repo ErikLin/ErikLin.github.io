@@ -1,0 +1,247 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Erik Lindsay | Package Research Tool | Portfolio</title>
+    <meta name="description"
+        content="Hi! I'm Erik, a problem solver with a passion for designing products people love.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="resources/bitter/bitter.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <nav class="border">
+        <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#links">Links</a></li>
+        </ul>
+    </nav>
+
+    <div class="big-img">
+        <img id="close" src="img/x.svg" alt="close large preview" />
+        <img id="big-pic" alt="" src="img/ccmc/Home-info.png">
+    </div>
+
+    <article>
+
+        <div class="words">
+            <h1>Package Research Tool</h1>
+            <h5>Pitney Bowes</h5>
+
+            <h2>Overview</h2>
+            <p>
+                The package research tool provides a central place for the customer support team to track packages
+                and get a complete view of a package details.
+            </p>
+        </div>
+        <div class="three-img-row">
+            <img alt="Bin full monitor" src="img/package-research/bulk-results.jpg" />
+            <img alt="Bin full monitor" src="img/package-research/package.jpg" />
+        </div>
+
+        <div class="words">
+            <h2>Problems</h2>
+            <ul>
+                <li>“Where is my package?” is the number one support request from clients.</li>
+                <li>The team had 5+ systems for finding various tracking information that were painfully slow and difficult to use.</li>
+                <li>Many requests are for anywhere from 1 to 100,000 packages at a time.</li>
+                <li>The customer support team has to be careful about how much information can be revealed to clients, because they use two levels of tracking detail and the extra information can often confuse clients.</li>
+            </ul>
+            <br>
+            <h2>User Needs</h2>
+            <ul>
+                <li>A centralized place to track packages.</li>
+                <li>Ability to track packages up and down the container hierarchy (BOL > container > package).</li>
+                <li>Summary of large data sets containing tracking results.</li>
+                <li>Provide the support team with the information clients are seeing and the extra details available to internal teams.</li>
+                <li>Simplified method to share results with client</li>
+            </ul>
+        </div>
+
+        <div class="words">
+            <h2>Working Through Each Design Challenge</h2>
+            <h3>Viewing tracking events and Their details</h3>
+            <p>
+                The latest tracking status is the most important information, but it’s not always trustworthy. Clients are often asking about the package because the current status is different than their expectation. As a result the support team often has to look into past events and cross reference multiple sources to determine if the latest event is trustworthy .
+                <br>
+                To fully understand the problem users often ask themselves the following questions:
+            </p>
+            <ul>
+                <li>When did the event happen?</li>
+                <li>Where was the package?</li>
+                <li>Who had custody of the package at the time?</li>
+                <li>Is the event a problem? If so, what kind of problem?</li>
+                <li>How was the event triggered? Was it a physical scan of the package?</li>
+                <li>What container was the package in at the time?</li>
+            </ul>
+
+            <p>
+                That’s a lot of data to distill into one view, and it wasn’t immediately clear how important
+                some of it was. In times of uncertainty the best thing to do is ask the users. I created a few
+                different concepts and presented them to users to help choose a direction. After talking to the users I better understood their hierarchy of needs, which the timeline concept best addressed.
+            </p>
+        </div>
+
+        <div class="three-img-row">
+            <figure>
+                <figcaption>A - Table view</figcaption>
+                <img src="img/package-research/concepts-01.jpg" alt="Tracking concept A, Table view">
+            </figure>
+            
+            <figure>
+                <figcaption>B - Card view</figcaption>
+                <img src="img/package-research/concepts-02.jpg" alt="Tracking concept B, Card view">
+            </figure>
+            
+            <figure>
+                <figcaption>C - Timeline view <br>(Winner for data density and hierarchy)</figcaption>
+                <img src="img/package-research/concepts-03.jpg" alt="Tracking concept C, Timeline view">
+            </figure>
+            </div>
+
+        <div class="words">
+            <h3>Tracking THOUSANDS of packages at once</h3>
+            <p>
+                Often times clients would send lists of packages where only 10% of them had any issues. Most of the
+                time they were just looking for a status update. The customer support team needed a tool to help
+                them weed though the noise and track down problems. Their previous methods used Excel to
+                filter and create pivot tables. Our goal was to automate as much as possible.
+            </p>
+           
+        </div>
+
+            <figure class="row">
+                <img src="img/package-research/bulk-results.jpg" alt="Bulk tracking results page">
+                <figcaption> <h4>Bulk tracking results</h4>
+                    <ul>
+                        <li>Summary counts of the search results.</li>
+                        <li>Comprehensive filters to find any problem indicators.</li>
+                        <li>Counts next to filters to act as pivot table totals.</li>
+                        <li>Quick filters to detect common types of problem packages with one click.</li>
+                        <li>Simple export for sharing with clients.</li>
+                    </ul></figcaption>
+            </figure>
+
+        <div class="words">
+            <h2>Getting the full picture</h2>
+            <p>
+                Identifying problems with tracking was the most important thing for users. This can come in many
+                forms and often requires cross referencing several data points. The package details page was
+                designed to make issues obvious at a glance.
+            </p>
+           
+        </div>
+
+
+            <figure class="row">
+                <img src="img/package-research/bulk-results.jpg" alt="Bulk tracking results page">
+                <figcaption> 
+                    <h4>Package details page</h4>
+                    <ul>
+                        <li>Map view to check if a package is going in circles and compare the actual path of a package to the
+                            ideal path.</li>
+                        <li>The latest tracking status from two systems to help cross reference and check for accuracy.</li>
+                        <li>Tracking events from multiple systems and at multiple levels of detail.</li>
+                        <li>Package attributes and the latest information on the right.</li>
+                    </ul>
+                </figcaption>
+            </figure>
+
+
+        <div class="words">
+
+            <h2>Results</h2>
+            <p>The customer support team highly valued the end result, which significantly reduced the amount of time they spent
+                researching packages.</p>
+        </div>
+        
+        <div class="three-img-row">
+            <div class="img-col">
+            <img alt="Bin full monitor" src="img/package-research/search.jpg" />
+            <img alt="Bin full monitor" src="img/package-research/container.jpg" />
+        </div>
+
+        <div class="img-col">
+            <img alt="Bin full monitor" src="img/package-research/bulk-results.jpg" />
+            <img alt="Bin full monitor" src="img/package-research/bol.jpg" />
+        </div>
+
+        <div class="img-col">
+            <img alt="Bin full monitor" src="img/package-research/package.jpg" />
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+    </article>
+
+
+
+    <Footer id="links" class="clearfix">
+        <div class="card">
+            
+        <a class="resume link" href="index.html">←&nbsp; Back to Homepage</a>
+        | 
+    <a class="resume link" href="https://www.linkedin.com/in/erik-lindsay-106444a5">LinkedIn Profile</a>
+         <!-- | 
+
+        <a class="resume link" href="img/Erik_Lindsay_Resume.pdf">Resume</a> -->
+        </div>
+    </Footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+            (function (b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+                    function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+                e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+                e.src = 'https://www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

@@ -14,5 +14,9 @@ $( document ).ready(function() {
         $( "div.big-img" ).toggleClass("on");
         $( "body" ).toggleClass("noscroll");
     });
+
+    // $.get('links.html', function(data) {
+    //     $('#links').append(data);
+    // });
     
 });
