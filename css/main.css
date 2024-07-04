@@ -308,6 +308,10 @@ span.underline {
    
 }
 
+#more-header{
+    margin-top: 80px;
+}
+
 /* #work a:hover{
     outline: .55em solid #3A393E;
 } */
