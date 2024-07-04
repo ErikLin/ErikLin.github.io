@@ -269,6 +269,7 @@ span.underline {
 	align-items: stretch;
 	align-content: stretch;
 
+    width: 100%;
     max-width: 880px;
    
     color: inherit;
@@ -353,6 +354,10 @@ h2 {
     padding-bottom: 56px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#links p {
+text-align: center;
 }
 
 #links div {
@@ -676,8 +681,8 @@ margin-right: 16px;
     }
 
     article div.words {
-        padding-left: 2rem;
-        padding-right: 2rem
+        padding-left: 0rem;
+        padding-right: 0rem
     }
 
 
@@ -737,6 +742,7 @@ margin-right: 16px;
     }
     #work div.card img{
         align-self: center;
+        margin-right: 0;
     }
 
     .col-1,
@@ -803,10 +809,20 @@ margin-right: 16px;
         outline: .0em solid #3A393E;
     } */
 
-    #links {
-        padding: 10rem 0;
+    /* #links {
+        padding: 5rem 0;
     }
-
+    #links div {
+        
+        justify-content: space-between;
+        border-radius: 24px;
+        margin-bottom: 32px;
+    } */
+    
+    a.resume {
+        padding: .55rem;
+        margin: 16px;
+    }
     div.right-quote{
         flex-direction: column;
     }
@@ -822,6 +838,10 @@ margin-right: 16px;
     div.three-img-row img{
         margin: 8px;
 
+    }
+
+    div.a-b-c {
+        flex-direction: column;
     }
 }
 
