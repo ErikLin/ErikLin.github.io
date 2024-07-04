@@ -779,6 +779,9 @@ margin-right: 16px;
         margin: 0;
         display: inline
     }
+    #work #more-header{
+        margin-top: 48px;
+    }
 
     .overlay p {
         display: inline;
