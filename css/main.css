@@ -118,6 +118,19 @@ body {
     overflow: hidden;
 }
 
+div.words:first-of-type{
+    margin-top: 16px;
+}
+
+a.back {
+    padding: 16px;
+    border-radius: 8px;
+    /* text-decoration: underline; */
+
+    background-color: #ffffff60;
+    /* margin-bottom: 16px; */
+}
+
 nav {
     z-index: 50;
     border: .55em solid #3A393E;
@@ -417,7 +430,7 @@ article {
 
 article h1 {
     margin-bottom: 0;
-    margin-top: 3rem;
+    margin-top: 48px;
 }
 
 article h5 {
@@ -666,6 +679,8 @@ margin-right: 16px;
         padding-left: 2rem;
         padding-right: 2rem
     }
+
+
 }
 
 @media only screen and (max-width: 50.7em) {
@@ -709,7 +724,19 @@ margin-right: 16px;
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-top: 10rem;
+        /* padding-top: 10rem; */
+    }
+
+    #work div.card {
+        flex-direction: column;
+/*         align-items: center; */
+    }
+
+    #work div.card div.description{
+        margin-top: 32px;
+    }
+    #work div.card img{
+        align-self: center;
     }
 
     .col-1,
@@ -720,7 +747,7 @@ margin-right: 16px;
     #work a {
         flex-direction: column;
         align-items: flex-start;
-        margin-bottom: 4rem;
+        /*! margin-bottom: 4rem; */
     }
 
     #work div.overlay {
@@ -791,6 +818,11 @@ margin-right: 16px;
         width: 100%;
         max-width: none;
     }
+
+    div.three-img-row img{
+        margin: 8px;
+
+    }
 }
 
 @media only screen and (max-width: 33em) {
@@ -812,7 +844,7 @@ margin-right: 16px;
 
     #work a {
         margin: 0;
-        margin-bottom: 3rem;
+        /* margin-bottom: 3rem; */
     }
 
 
